@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Time Manager"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#6200EE"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Class Schedule Section -->
+    <TextView
+        android:id="@+id/classScheduleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Schedule"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <ListView
+        android:id="@+id/classListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_card" />
+
+    <!-- To-Do List Section -->
+    <TextView
+        android:id="@+id/toDoListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To-Do List"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/toDoInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add new task..."
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_edittext" />
+
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="end"
+        android:padding="8dp" />
+
+    <ListView
+        android:id="@+id/toDoListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_card" />
+
+    <!-- Pomodoro Timer Section -->
+    <TextView
+        android:id="@+id/timerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pomodoro Timer"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25:00"
+        android:textSize="48sp"
+        android:textColor="#6200EE"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <Button
+        android:id="@+id/startTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Pomodoro"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#03DAC5"
+        android:layout_gravity="center_horizontal"
+        android:elevation="4dp" />
+
+    <!-- New Reset Timer Button -->
+    <Button
+        android:id="@+id/resetTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Timer"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF5722"
+        android:layout_gravity="center_horizontal"
+        android:elevation="4dp"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>
